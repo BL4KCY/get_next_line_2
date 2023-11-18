@@ -6,7 +6,7 @@
 /*   By: melfersi <melfersi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 23:01:18 by melfersi          #+#    #+#             */
-/*   Updated: 2023/11/18 07:49:44 by melfersi         ###   ########.fr       */
+/*   Updated: 2023/11/18 17:18:52 by melfersi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define GET_NEXT_LINE_H
 # include <stdlib.h>
 # include <unistd.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 13
+# endif
 
 char	*get_next_line(int fd);
 
@@ -25,8 +29,4 @@ void	*ft_calloc(size_t elementCount, size_t elementSize);
 
 size_t	ft_strlen(const char *s);
 
-#endif
-
-#ifndef BUFFER_SIZE
-# define BUFFER_SIZE 5
 #endif
