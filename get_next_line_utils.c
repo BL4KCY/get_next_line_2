@@ -6,7 +6,7 @@
 /*   By: melfersi <melfersi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 23:01:00 by melfersi          #+#    #+#             */
-/*   Updated: 2023/11/17 23:18:50 by melfersi         ###   ########.fr       */
+/*   Updated: 2023/11/18 07:50:04 by melfersi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,12 @@ void	*ft_calloc(size_t elementCount, size_t elementSize)
 	return (res);
 }
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	index;
 
 	index = 0;
-	while (str[index])
+	while (s[index])
 		index++;
 	return (index);
 }
