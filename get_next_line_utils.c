@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melfersi <melfersi@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: melfersi <melfersi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 23:01:00 by melfersi          #+#    #+#             */
-/*   Updated: 2023/11/18 07:50:04 by melfersi         ###   ########.fr       */
+/*   Updated: 2023/11/19 14:54:42 by melfersi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,16 @@ char	*ft_strchr(const char *str, int c)
 	return (NULL);
 }
 
-void	*ft_calloc(size_t elementCount, size_t elementSize)
+void	*ft_calloc(size_t count, size_t size)
 {
 	char	*res;
 	size_t	index;
 
-	res = malloc(elementSize * elementCount);
+	res = malloc(size * count);
 	if (!res)
 		return (NULL);
 	index = 0;
-	while (index < elementCount * elementSize)
+	while (index < count * size)
 		res[index++] = 0;
 	return (res);
 }
