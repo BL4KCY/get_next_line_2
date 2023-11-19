@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melfersi <melfersi@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: melfersi <melfersi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 22:12:45 by melfersi          #+#    #+#             */
-/*   Updated: 2023/11/18 17:23:52 by melfersi         ###   ########.fr       */
+/*   Updated: 2023/11/19 11:47:27 by melfersi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*join_and_free(char *buffer, char *buf)
 {
@@ -91,7 +91,7 @@ char	*read_to_endl(int fd, char *bfr)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer[4096];
+	static char	*buffer[1024];
 	char		*line;
 
 	if (BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
